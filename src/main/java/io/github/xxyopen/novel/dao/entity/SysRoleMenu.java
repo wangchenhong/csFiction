@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * 角色与菜单对应关系
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("sys_role_menu")

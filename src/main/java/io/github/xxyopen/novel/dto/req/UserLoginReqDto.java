@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 用户登录 请求DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/16
  */
 @Data

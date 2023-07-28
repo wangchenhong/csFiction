@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * mail 配置属性
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2023/3/25
  */
 @ConfigurationProperties(prefix = "spring.mail")

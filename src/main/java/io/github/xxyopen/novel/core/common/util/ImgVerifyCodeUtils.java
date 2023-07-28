@@ -14,7 +14,7 @@ import lombok.experimental.UtilityClass;
 /**
  * 图片验证码工具类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @UtilityClass
@@ -60,7 +60,7 @@ public class ImgVerifyCodeUtils {
         g.setColor(new Color(204, 204, 204));
         // 绘制干扰线
         // 干扰线数量
-        int lineSize = 40;
+        int lineSize = 200;
         for (int i = 0; i <= lineSize; i++) {
             drawLine(g);
         }

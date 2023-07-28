@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * 小说类别
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/12
  */
 @TableName("book_category")

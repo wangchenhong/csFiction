@@ -3,7 +3,7 @@ package io.github.xxyopen.novel.core.constant;
 /**
  * elasticsearch 相关常量
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 public class EsConsts {

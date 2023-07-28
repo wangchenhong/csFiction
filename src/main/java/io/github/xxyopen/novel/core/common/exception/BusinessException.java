@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 自定义业务异常，用于处理用户请求时，业务错误时抛出
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/11
  */
 @EqualsAndHashCode(callSuper = true)

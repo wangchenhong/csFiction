@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 新闻模块 服务类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/14
  */
 public interface NewsService {

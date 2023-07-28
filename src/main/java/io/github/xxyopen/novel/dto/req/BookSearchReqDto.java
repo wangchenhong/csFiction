@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 小说搜索 请求DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/16
  */
 @Data

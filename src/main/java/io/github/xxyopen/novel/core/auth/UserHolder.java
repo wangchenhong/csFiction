@@ -5,7 +5,7 @@ import lombok.experimental.UtilityClass;
 /**
  * 用户信息 持有类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/18
  */
 @UtilityClass

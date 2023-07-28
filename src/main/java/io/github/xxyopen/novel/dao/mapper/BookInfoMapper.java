@@ -14,7 +14,7 @@ import java.util.List;
  * 小说信息 Mapper 接口
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 public interface BookInfoMapper extends BaseMapper<BookInfo> {

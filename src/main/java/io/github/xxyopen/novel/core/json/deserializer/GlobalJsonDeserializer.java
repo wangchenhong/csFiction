@@ -10,7 +10,7 @@ import org.springframework.boot.jackson.JsonComponent;
 /**
  * JSON 全局反序列化器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/21
  */
 @JsonComponent

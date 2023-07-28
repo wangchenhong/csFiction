@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 /**
  * Rabbit 队列监听器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/25
  */
 @Component

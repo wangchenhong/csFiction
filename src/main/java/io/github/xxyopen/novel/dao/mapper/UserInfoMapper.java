@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * 用户信息 Mapper 接口
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 public interface UserInfoMapper extends BaseMapper<UserInfo> {

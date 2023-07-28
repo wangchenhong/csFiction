@@ -9,7 +9,7 @@ package io.github.xxyopen.novel.manager.message;
  * <p>
  * 每种类型的消息发送时机可能都不一样，不同类型和发送时机的消息格式可能也不一样，所以由各个子类去拓展消息的格式
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2023/3/24
  */
 public abstract class AbstractMessageSender implements MessageSender {

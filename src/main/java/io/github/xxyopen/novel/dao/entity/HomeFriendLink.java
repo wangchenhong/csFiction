@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * 友情链接
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("home_friend_link")

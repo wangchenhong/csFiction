@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 用户信息 DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/18
  */
 @Data

@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  * 稿费收入明细统计
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("author_income_detail")

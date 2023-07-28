@@ -5,7 +5,7 @@ package io.github.xxyopen.novel.manager.message;
  * <p>
  * 消息按类型分系统通知、邮件、短信、小程序通知等，按发送时机分注册成功消息、充值成功消息、活动通知消息、账户封禁消息、小说下架消息等
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2023/3/25
  */
 public interface MessageSender {

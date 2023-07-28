@@ -10,7 +10,7 @@ import java.time.ZoneOffset;
 
 /**
  * Elasticsearch 存储小说 DTO
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @Data

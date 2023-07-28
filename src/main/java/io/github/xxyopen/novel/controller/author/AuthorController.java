@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 作家后台-作家模块 API 控制器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @Tag(name = "AuthorController", description = "作家后台-作者模块")

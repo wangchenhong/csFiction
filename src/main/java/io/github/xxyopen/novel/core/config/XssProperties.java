@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * Xss 过滤配置属性
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @ConfigurationProperties(prefix = "novel.xss")

@@ -4,7 +4,7 @@ package io.github.xxyopen.novel.core.common.constant;
 /**
  * 通用常量
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/12
  */
 public class CommonConsts {

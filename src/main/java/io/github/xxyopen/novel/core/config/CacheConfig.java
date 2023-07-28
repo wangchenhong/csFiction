@@ -21,7 +21,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 /**
  * 缓存配置类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/12
  */
 @Configuration

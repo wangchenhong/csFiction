@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * XSS 过滤处理
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {

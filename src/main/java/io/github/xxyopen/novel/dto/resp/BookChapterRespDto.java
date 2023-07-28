@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 /**
  * 小说章节 响应DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/15
  */
 @Data

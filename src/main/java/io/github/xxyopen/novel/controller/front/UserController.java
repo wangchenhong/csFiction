@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 前台门户-会员模块 API 控制器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @Tag(name = "UserController", description = "前台门户-会员模块")

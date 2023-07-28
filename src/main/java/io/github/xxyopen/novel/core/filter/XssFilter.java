@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 /**
  * 防止 XSS 攻击的过滤器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @Component

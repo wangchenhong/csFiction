@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 分页请求数据格式封装，所有分页请求的Dto类都应继承该类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/11
  */
 @Data

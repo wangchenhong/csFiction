@@ -17,7 +17,7 @@ import java.util.Objects;
 /**
  * 作家模块 服务实现类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @Service

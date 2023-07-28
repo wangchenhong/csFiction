@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * 作家邀请码
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("author_code")

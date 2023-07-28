@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * 作家邀请码 Mapper 接口
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 public interface AuthorCodeMapper extends BaseMapper<AuthorCode> {

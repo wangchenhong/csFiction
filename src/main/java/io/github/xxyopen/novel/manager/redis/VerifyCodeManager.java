@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 /**
  * 验证码 管理类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/12
  */
 @Component
@@ -29,6 +29,12 @@ public class VerifyCodeManager {
     public String genImgVerifyCode(String sessionId) throws IOException {
         String verifyCode = ImgVerifyCodeUtils.getRandomVerifyCode(4);
         String img = ImgVerifyCodeUtils.genVerifyCodeImg(verifyCode);
+        /**
+         * 将一个键值对存储到 Redis 中，其中键是由 CacheConsts.IMG_VERIFY_CODE_CACHE_KEY 和 sessionId 连接而成的，
+         * 而值是变量 verifyCode 的值。Duration.ofMinutes(5) 表示该键值对在 Redis 中的过期时间为5分钟。
+         * 通过这个操作，你可以将验证码（verifyCode）存储在 Redis 缓存中，并与会话 ID（sessionId）关联起来。
+         * 这样，可以在后续的代码中通过会话 ID 来获取和验证验证码，以实现业务逻辑上的需求。
+         */
         stringRedisTemplate.opsForValue().set(CacheConsts.IMG_VERIFY_CODE_CACHE_KEY + sessionId,
             verifyCode, Duration.ofMinutes(5));
         return img;

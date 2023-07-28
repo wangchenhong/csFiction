@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * 小说推荐 Mapper 接口
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/12
  */
 public interface HomeBookMapper extends BaseMapper<HomeBook> {

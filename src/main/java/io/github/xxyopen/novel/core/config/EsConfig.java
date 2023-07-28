@@ -22,7 +22,7 @@ import java.security.cert.X509Certificate;
 /**
  * Elasticsearch 相关配置
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @Configuration

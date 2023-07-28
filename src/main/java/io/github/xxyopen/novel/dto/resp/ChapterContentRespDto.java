@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 小说内容 响应DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/15
  */
 @Data

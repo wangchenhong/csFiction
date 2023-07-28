@@ -32,7 +32,7 @@ import java.util.Objects;
 /**
  * Elasticsearch 搜索 服务实现类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @ConditionalOnProperty(prefix = "spring.elasticsearch", name = "enabled", havingValue = "true")

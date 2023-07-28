@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.Length;
 
 /**
  * 用户发表评论 请求DTO
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @Data

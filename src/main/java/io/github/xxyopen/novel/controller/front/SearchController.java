@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 前台门户-搜索模块 API 控制器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/27
  */
 @Tag(name = "SearchController", description = "前台门户-搜索模块")

@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 /**
  * 注册成功的邮件发送器
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2023/3/24
  */
 @Component(value = MessageSenderTypeConsts.REGISTER_MAIL_SENDER)

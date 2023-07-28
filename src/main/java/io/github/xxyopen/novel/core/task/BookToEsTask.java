@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * 小说数据同步到 elasticsearch 任务
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/23
  */
 @ConditionalOnProperty(prefix = "spring.elasticsearch", name = "enabled", havingValue = "true")

@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 小说信息 缓存管理类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/12
  */
 @Component

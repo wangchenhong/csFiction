@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * XXL-JOB 配置类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/31
  */
 @Configuration

@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 小说模块 服务类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/14
  */
 public interface BookService {

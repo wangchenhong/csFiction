@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * 系统日志
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("sys_log")

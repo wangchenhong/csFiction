@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 首页友情链接 响应DTO
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/14
  */
 @Data

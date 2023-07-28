@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 分页响应数据格式封装
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/11
  */
 @Getter

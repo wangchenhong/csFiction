@@ -25,7 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 资源（图片/视频/文档）相关服务实现类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/17
  */
 @Service
@@ -40,6 +40,7 @@ public class ResourceServiceImpl implements ResourceService {
 
     @Override
     public RestResp<ImgVerifyCodeRespDto> getImgVerifyCode() throws IOException {
+        //生成一个唯一的会话ID
         String sessionId = IdWorker.get32UUID();
         return RestResp.ok(ImgVerifyCodeRespDto.builder()
             .sessionId(sessionId)

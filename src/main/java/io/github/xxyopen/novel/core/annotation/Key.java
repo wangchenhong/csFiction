@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 /**
  * 分布式锁-Key 注解
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/6/20
  */
 @Documented

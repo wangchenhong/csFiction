@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
  * 小说评论回复
  * </p>
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/05/11
  */
 @TableName("book_comment_reply")

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * AMQP 配置类
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/25
  */
 @Configuration
