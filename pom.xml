@@ -68,13 +68,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!--热部署-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
-
         <!-- 缓存相关 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
