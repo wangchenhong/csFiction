@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 前台门户-小说模块 API 控制器
  *
  * @author chenxi
- * @date 2022/5/14
+ * @date 2023/7/31
  */
 @Tag(name = "BookController", description = "前台门户-小说模块")
 @RestController

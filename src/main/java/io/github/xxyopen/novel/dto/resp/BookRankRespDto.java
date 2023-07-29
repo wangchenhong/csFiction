@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  * 小说排行榜 响应DTO
  *
  * @author chenxi
- * @date 2022/5/14
+ * @date 2023/7/31
  */
 @Data
 public class BookRankRespDto implements Serializable {

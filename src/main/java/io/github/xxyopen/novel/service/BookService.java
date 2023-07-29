@@ -16,7 +16,7 @@ import java.util.List;
  * 小说模块 服务类
  *
  * @author chenxi
- * @date 2022/5/14
+ * @date 2023/7/31
  */
 public interface BookService {
 

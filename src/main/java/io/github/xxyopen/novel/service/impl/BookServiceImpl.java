@@ -43,7 +43,7 @@ import java.util.stream.Collectors;
  * 小说模块 服务实现类
  *
  * @author chenxi
- * @date 2022/5/14
+ * @date 2023/7/31
  */
 @Service
 @RequiredArgsConstructor
@@ -59,8 +59,6 @@ public class BookServiceImpl implements BookService {
     private final BookChapterCacheManager bookChapterCacheManager;
 
     private final BookContentCacheManager bookContentCacheManager;
-
-    private final AuthorInfoCacheManager authorInfoCacheManager;
 
     private final BookInfoMapper bookInfoMapper;
 

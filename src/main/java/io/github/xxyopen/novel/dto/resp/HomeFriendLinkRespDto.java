@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 首页友情链接 响应DTO
  *
  * @author chenxi
- * @date 2022/5/14
+ * @date 2023/7/31
  */
 @Data
 public class HomeFriendLinkRespDto implements Serializable {

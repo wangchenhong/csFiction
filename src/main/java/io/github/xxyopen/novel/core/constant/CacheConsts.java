@@ -29,10 +29,6 @@ public class CacheConsts {
      */
     public static final String HOME_BOOK_CACHE_NAME = "homeBookCache";
 
-    /**
-     * 最新新闻缓存
-     */
-    public static final String LATEST_NEWS_CACHE_NAME = "latestNewsCache";
 
     /**
      * 小说点击榜缓存
@@ -90,10 +86,6 @@ public class CacheConsts {
      */
     public static final String USER_INFO_CACHE_NAME = "userInfoCache";
 
-    /**
-     * 作家信息缓存
-     */
-    public static final String AUTHOR_INFO_CACHE_NAME = "authorInfoCache";
 
     /**
      * 缓存配置常量
@@ -101,8 +93,6 @@ public class CacheConsts {
     public enum CacheEnum {
 
         HOME_BOOK_CACHE(0, HOME_BOOK_CACHE_NAME, 60 * 60 * 24, 1),
-
-        LATEST_NEWS_CACHE(0, LATEST_NEWS_CACHE_NAME, 60 * 10, 1),
 
         BOOK_VISIT_RANK_CACHE(2, BOOK_VISIT_RANK_CACHE_NAME, 60 * 60 * 6, 1),
 
@@ -122,9 +112,7 @@ public class CacheConsts {
 
         LAST_UPDATE_BOOK_ID_LIST_CACHE(0, LAST_UPDATE_BOOK_ID_LIST_CACHE_NAME, 60 * 60, 10),
 
-        USER_INFO_CACHE(2, USER_INFO_CACHE_NAME, 60 * 60 * 24, 10000),
-
-        AUTHOR_INFO_CACHE(2, AUTHOR_INFO_CACHE_NAME, 60 * 60 * 48, 1000);
+        USER_INFO_CACHE(2, USER_INFO_CACHE_NAME, 60 * 60 * 24, 10000);
 
         /**
          * 缓存类型 0-本地 1-本地和远程 2-远程
