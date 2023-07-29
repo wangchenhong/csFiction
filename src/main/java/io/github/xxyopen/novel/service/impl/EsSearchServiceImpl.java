@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Elasticsearch 搜索 服务实现类
+ * Elasticsearch 搜索服务实现类
  *
  * @author chenxi
  * @date 2022/5/23
