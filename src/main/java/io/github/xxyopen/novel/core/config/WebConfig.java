@@ -9,6 +9,7 @@ import io.github.xxyopen.novel.core.interceptor.TokenParseInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -63,5 +64,13 @@ public class WebConfig implements WebMvcConfigurer {
             .addPathPatterns(ApiRouterConsts.API_FRONT_BOOK_URL_PREFIX + "/content/*")
             .order(3);
 
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/image/**")
+            .addResourceLocations("classpath:/image/");
+        registry.addResourceHandler("/localPic/**")
+            .addResourceLocations("classpath:/localPic/");
     }
 }
