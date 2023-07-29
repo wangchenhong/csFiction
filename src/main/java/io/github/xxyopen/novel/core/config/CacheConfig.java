@@ -88,5 +88,4 @@ public class CacheConfig {
         redisCacheManager.initializeCaches();
         return redisCacheManager;
     }
-
 }
