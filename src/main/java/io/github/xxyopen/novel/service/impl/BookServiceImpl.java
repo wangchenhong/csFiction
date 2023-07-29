@@ -286,35 +286,6 @@ public class BookServiceImpl implements BookService {
         return RestResp.ok();
     }
 
-    @Override
-    public RestResp<Void> saveBook(BookAddReqDto dto) {
-        // 校验小说名是否已存在
-        QueryWrapper<BookInfo> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq(DatabaseConsts.BookTable.COLUMN_BOOK_NAME, dto.getBookName());
-        if (bookInfoMapper.selectCount(queryWrapper) > 0) {
-            return RestResp.fail(ErrorCodeEnum.AUTHOR_BOOK_NAME_EXIST);
-        }
-        BookInfo bookInfo = new BookInfo();
-        // 设置作家信息
-        AuthorInfoDto author = authorInfoCacheManager.getAuthor(UserHolder.getUserId());
-        bookInfo.setAuthorId(author.getId());
-        bookInfo.setAuthorName(author.getPenName());
-        // 设置其他信息
-        bookInfo.setWorkDirection(dto.getWorkDirection());
-        bookInfo.setCategoryId(dto.getCategoryId());
-        bookInfo.setCategoryName(dto.getCategoryName());
-        bookInfo.setBookName(dto.getBookName());
-        bookInfo.setPicUrl(dto.getPicUrl());
-        bookInfo.setBookDesc(dto.getBookDesc());
-        bookInfo.setIsVip(dto.getIsVip());
-        bookInfo.setScore(0);
-        bookInfo.setCreateTime(LocalDateTime.now());
-        bookInfo.setUpdateTime(LocalDateTime.now());
-        // 保存小说信息
-        bookInfoMapper.insert(bookInfo);
-        return RestResp.ok();
-    }
-
     @Transactional(rollbackFor = Exception.class)
     @Override
     public RestResp<Void> saveBookChapter(ChapterAddReqDto dto) {

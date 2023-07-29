@@ -149,14 +149,6 @@ public interface BookService {
     RestResp<Void> updateComment(Long userId, Long id, String content);
 
     /**
-     * 小说信息保存
-     *
-     * @param dto 小说信息
-     * @return void
-     */
-    RestResp<Void> saveBook(BookAddReqDto dto);
-
-    /**
      * 小说章节信息保存
      *
      * @param dto 章节信息
