@@ -12,7 +12,7 @@ import lombok.Getter;
  * <p>
  * 错误码分为一级宏观错误码、二级宏观错误码、三级宏观错误码。 在无法更加具体确定的错误场景中，可以直接使用一级宏观错误码。
  *
- * @author xiongxiaoyang
+ * @author chenxi
  * @date 2022/5/11
  */
 @Getter
@@ -22,7 +22,7 @@ public enum ErrorCodeEnum {
     /**
      * 正确执行后的返回
      */
-    OK("00000", "一切 ok"),
+    OK("00000", "一切ok"),
 
     /**
      * 一级宏观错误码，用户端错误
@@ -34,15 +34,6 @@ public enum ErrorCodeEnum {
      */
     USER_REGISTER_ERROR("A0100", "用户注册错误"),
 
-    /**
-     * 用户未同意隐私协议
-     */
-    USER_NO_AGREE_PRIVATE_ERROR("A0101", "用户未同意隐私协议"),
-
-    /**
-     * 注册国家或地区受限
-     */
-    USER_REGISTER_AREA_LIMIT_ERROR("A0102", "注册国家或地区受限"),
 
     /**
      * 用户验证码错误
@@ -99,10 +90,6 @@ public enum ErrorCodeEnum {
      */
     USER_COMMENTED("A2001", "用户已发表评论"),
 
-    /**
-     * 小说名已存在
-     */
-    AUTHOR_BOOK_NAME_EXIST("A3001", "小说名已存在"),
 
     /**
      * 用户上传文件异常
