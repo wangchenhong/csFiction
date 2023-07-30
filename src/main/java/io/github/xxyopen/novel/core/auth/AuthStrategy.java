@@ -27,7 +27,7 @@ public interface AuthStrategy {
     void auth(String token, String requestUri) throws BusinessException;
 
     /**
-     * 前台多系统单点登录统一账号认证授权（门户系统、作家系统以及后面会扩展的漫画系统和视频系统等）
+     * 前台多系统单点登录统一账号认证授权
      *
      * @param jwtUtils             jwt 工具
      * @param userInfoCacheManager 用户缓存管理对象

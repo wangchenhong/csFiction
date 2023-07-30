@@ -41,8 +41,8 @@ public class CommonConsts {
             this.desc = desc;
         }
 
-        private int code;
-        private String desc;
+        private final int code;
+        private final String desc;
 
         public int getCode() {
             return code;

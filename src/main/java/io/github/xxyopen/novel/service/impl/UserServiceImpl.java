@@ -43,10 +43,6 @@ public class UserServiceImpl implements UserService {
 
     private final VerifyCodeManager verifyCodeManager;
 
-    private final UserFeedbackMapper userFeedbackMapper;
-
-    private final UserBookshelfMapper userBookshelfMapper;
-
     private final JwtUtils jwtUtils;
 
     @Override
@@ -117,17 +113,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public RestResp<Void> saveFeedback(Long userId, String content) {
-        UserFeedback userFeedback = new UserFeedback();
-        userFeedback.setUserId(userId);
-        userFeedback.setContent(content);
-        userFeedback.setCreateTime(LocalDateTime.now());
-        userFeedback.setUpdateTime(LocalDateTime.now());
-        userFeedbackMapper.insert(userFeedback);
-        return RestResp.ok();
-    }
-
-    @Override
     public RestResp<Void> updateUserInfo(UserInfoUptReqDto dto) {
         UserInfo userInfo = new UserInfo();
         userInfo.setId(dto.getUserId());
@@ -136,27 +121,6 @@ public class UserServiceImpl implements UserService {
         userInfo.setUserSex(dto.getUserSex());
         userInfoMapper.updateById(userInfo);
         return RestResp.ok();
-    }
-
-    @Override
-    public RestResp<Void> deleteFeedback(Long userId, Long id) {
-        QueryWrapper<UserFeedback> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq(DatabaseConsts.CommonColumnEnum.ID.getName(), id)
-            .eq(DatabaseConsts.UserFeedBackTable.COLUMN_USER_ID, userId);
-        userFeedbackMapper.delete(queryWrapper);
-        return RestResp.ok();
-    }
-
-    @Override
-    public RestResp<Integer> getBookshelfStatus(Long userId, String bookId) {
-        QueryWrapper<UserBookshelf> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq(DatabaseConsts.UserBookshelfTable.COLUMN_USER_ID, userId)
-            .eq(DatabaseConsts.UserBookshelfTable.COLUMN_BOOK_ID, bookId);
-        return RestResp.ok(
-            userBookshelfMapper.selectCount(queryWrapper) > 0
-                ? CommonConsts.YES
-                : CommonConsts.NO
-        );
     }
 
     @Override

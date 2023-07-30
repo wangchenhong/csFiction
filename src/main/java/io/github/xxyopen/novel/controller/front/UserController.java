@@ -79,24 +79,6 @@ public class UserController {
     }
 
     /**
-     * 用户反馈提交接口
-     */
-    @Operation(summary = "用户反馈提交接口")
-    @PostMapping("feedback")
-    public RestResp<Void> submitFeedback(@RequestBody String content) {
-        return userService.saveFeedback(UserHolder.getUserId(), content);
-    }
-
-    /**
-     * 用户反馈删除接口
-     */
-    @Operation(summary = "用户反馈删除接口")
-    @DeleteMapping("feedback/{id}")
-    public RestResp<Void> deleteFeedback(@Parameter(description = "反馈ID") @PathVariable Long id) {
-        return userService.deleteFeedback(UserHolder.getUserId(), id);
-    }
-
-    /**
      * 发表评论接口
      */
     @Operation(summary = "发表评论接口")
@@ -123,15 +105,6 @@ public class UserController {
     @DeleteMapping("comment/{id}")
     public RestResp<Void> deleteComment(@Parameter(description = "评论ID") @PathVariable Long id) {
         return bookService.deleteComment(UserHolder.getUserId(), id);
-    }
-
-    /**
-     * 查询书架状态接口 0-不在书架 1-已在书架
-     */
-    @Operation(summary = "查询书架状态接口")
-    @GetMapping("bookshelf_status")
-    public RestResp<Integer> getBookshelfStatus(@Parameter(description = "小说ID") String bookId) {
-        return userService.getBookshelfStatus(UserHolder.getUserId(), bookId);
     }
 
     /**

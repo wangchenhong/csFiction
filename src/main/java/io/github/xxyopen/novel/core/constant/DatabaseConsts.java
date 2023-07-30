@@ -24,47 +24,6 @@ public class DatabaseConsts {
     }
 
     /**
-     * 用户反馈表
-     */
-    public static class UserFeedBackTable {
-
-        private UserFeedBackTable() {
-            throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
-        }
-
-        public static final String COLUMN_USER_ID = "user_id";
-
-    }
-
-    /**
-     * 用户书架表
-     */
-    public static class UserBookshelfTable {
-
-        private UserBookshelfTable() {
-            throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
-        }
-
-        public static final String COLUMN_USER_ID = "user_id";
-
-        public static final String COLUMN_BOOK_ID = "book_id";
-
-    }
-
-    /**
-     * 作家信息表
-     */
-    public static class AuthorInfoTable {
-
-        private AuthorInfoTable() {
-            throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
-        }
-
-        public static final String COLUMN_USER_ID = "user_id";
-
-    }
-
-    /**
      * 小说类别表
      */
     public static class BookCategoryTable {
@@ -146,19 +105,6 @@ public class DatabaseConsts {
     }
 
     /**
-     * 新闻内容表
-     */
-    public static class NewsContentTable {
-
-        private NewsContentTable() {
-            throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
-        }
-
-        public static final String COLUMN_NEWS_ID = "news_id";
-
-    }
-
-    /**
      * 通用列枚举类
      */
     @Getter
@@ -169,7 +115,7 @@ public class DatabaseConsts {
         CREATE_TIME("create_time"),
         UPDATE_TIME("update_time");
 
-        private String name;
+        private final String name;
 
         CommonColumnEnum(String name) {
             this.name = name;
@@ -190,7 +136,7 @@ public class DatabaseConsts {
         LIMIT_30("limit 30"),
         LIMIT_500("limit 500");
 
-        private String sql;
+        private final String sql;
 
         SqlEnum(String sql) {
             this.sql = sql;

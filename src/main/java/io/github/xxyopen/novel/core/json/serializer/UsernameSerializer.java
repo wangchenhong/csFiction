@@ -18,5 +18,4 @@ public class UsernameSerializer extends JsonSerializer<String> {
         SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeString(s.substring(0, 4) + "****" + s.substring(8));
     }
-
 }
